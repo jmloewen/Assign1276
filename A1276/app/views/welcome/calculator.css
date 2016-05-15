@@ -1,0 +1,119 @@
+body
+{
+    font-family:helvetica;
+    display:block;
+    padding: 20px;
+}
+h1
+{
+    
+    font-style:normal;
+}
+fieldset
+{
+    border: none;
+}
+h3
+{
+    color:rgb(192,42,54);
+}
+.activities
+{
+    width: 1000px;
+    background-color:rgb(233,238,241);
+    border: 1px solid rgb(217,229,232);
+    padding-left: 10px;
+    
+    table-layout: auto;
+    
+}
+table
+{
+    display:inline;
+    width: 100%;
+    margin-left: -10px;
+    
+    border-collapse: collapse;
+}
+
+th
+{
+    background-color:rgb(221,221,221);
+}
+
+th, td
+{
+    text-align: left;
+    border: 1px solid rgb(207,207,208);
+    padding:8px;
+    width:250px;
+}
+
+
+
+td input
+{
+    width:85px;
+}
+
+tfoot
+{
+    font-weight: bold;
+}
+
+tfoot tr td p
+{
+    height: 0px;
+}
+#buttons
+{
+    margin-top: 40px;
+    text-align:right;
+    padding-right: 15px;
+    
+}
+button
+{
+    padding:3px;
+    background-color:rgb(192,42,54);
+    color: white;
+    border-style: none;
+    border-radius:2px;
+}
+.outer
+{
+    background-color: white;
+    padding-bottom:20px;
+    padding-left: 20px;
+    padding-top: 40px;
+    margin-left: 40px;
+    width: 90%;
+}
+body
+{
+    
+    background-color:rgb(167,25,47);
+}
+#clr
+{
+    margin-right: 10px;
+}
+
+#avg
+{
+    margin-right: 10px;
+    width:70px;
+}
+
+#mean
+{
+    width: 70px;
+}
+
+button:active{
+    background-color: blue;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
