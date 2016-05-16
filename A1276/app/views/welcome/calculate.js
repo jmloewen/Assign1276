@@ -1,3 +1,70 @@
+function chgAct(fieldid)
+{
+    var newVal = prompt("Re-name " + document.getElementById("tf" + fieldid).innerHTML + "?", document.getElementById("tf" + fieldid).innerHTML);
+    
+    if (newVal != null)
+    {
+        document.getElementById("tf" + fieldid).innerHTML = "" + newVal;
+    }
+}
+
+function removetablerow()
+{
+    var numInputs = document.getElementsByTagName("input").length / 2;
+    
+    if (numInputs >= 2)
+    {
+        document.getElementById("tbl1").deleteRow(numInputs);
+    }
+    
+}
+
+function addtablerow()
+{
+    var numInputs = document.getElementsByTagName("input").length / 2;
+    var curTable = document.getElementById("tbl1").getElementsByTagName("tbody")[0];
+    var curRow = curTable.insertRow(numInputs);
+    
+    var nameCell = curRow.insertCell(0);
+    nameCell.innerHTML = "Activity " + (numInputs + 1);
+    nameCell.id = "tf" + (numInputs + 1);
+    
+    var shNameCell = curRow.insertCell(1);
+    shNameCell.innerHTML = "A" + (numInputs + 1);
+    shNameCell.id = "ab" + (numInputs + 1);
+    nameCell.onclick = function() {chgAct(numInputs + 1)};
+    shNameCell.onclick = function() {chgAbbrev(numInputs + 1)};
+    
+    var inputcell = curRow.insertCell(2);
+    var numField = document.createElement("input");
+    var denField = document.createElement("input");
+    numField.id = "gr" + (numInputs + 1);
+    denField.id = "tot" + (numInputs + 1);
+    numField.type = "number";
+    denField.type = "number";
+    numField.min = "0";
+    denField.min = "1";
+    inputcell.appendChild(numField);
+    inputcell.innerHTML += " / ";
+    inputcell.appendChild(denField);
+    
+    var pctCell = curRow.insertCell(3);
+    var pctp = document.createElement("p");
+    pctp.id = "pc" + (numInputs + 1);
+    pctCell.appendChild(pctp);
+    
+}
+
+function chgAbbrev(fieldid) {
+    var newVal = prompt("Re-name " + document.getElementById("ab" + fieldid).innerHTML + "?", document.getElementById("ab" + fieldid).innerHTML);
+    //var newVal = prompt("Re-name Activity 1", "Activity 1");
+    
+     if (newVal != null)
+    {
+        document.getElementById("ab" + fieldid).innerHTML = "" + newVal;
+    }
+}
+
 function clearValues()
 {
     var numInputs = document.getElementsByTagName("input").length / 2;
@@ -8,7 +75,7 @@ function clearValues()
         document.getElementById('pc' + i).innerHTML = "";
     }
     document.getElementById('moaog').innerHTML = "";
-        document.getElementById('moaog').value = "";
+    document.getElementById('moaog').value = "";
 }
 
 function meanofgrades()

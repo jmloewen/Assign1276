@@ -17,7 +17,7 @@
                 <br/>
                 <form name="markcalculator">
                     <fieldset>
-                        <table style="width:800px" id="tbl1">
+                        <table style="width:800px">
                             <thead>
                                 <tr>
                                     <th>Name</th> <th>Short Name</th> <th>Grade</th> <th>Percentage</th>
@@ -25,20 +25,16 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td id="tf1" onclick="chgAct(1)">Activity 1</td>
-                                    <td id="ab1" onclick="chgAbbrev(1)">A1</td> <td> <input type="number" min="0"; class="grd" id="gr1" name="gr1"> / <input type="number" min="1"; class="grd" id="tot1" name="tot1"> </td> <td class="PCell"><p id="pc1"></p></td>
+                                    <td>Activity 1</td> <td>A1</td> <td> <input type="number" min="0"; class="grd" id="gr1" name="gr1"> / <input type="number" min="1"; class="grd" id="tot1" name="tot1"> </td> <td class="PCell"><p id="pc1"></p></td>
                                 </tr>
                                 <tr>
-                                    <td id="tf2" onclick="chgAct(2)">Activity 2</td>
-                                    <td id="ab2" onclick="chgAbbrev(2)">A2</td> <td> <input type="number" min="0"; class="grd" id="gr2" name="gr2"> / <input type="number" min="1"; class="grd" id="tot2" name="tot2"> </td> <td class="PCell"><p id="pc2"></p></td>
+                                    <td>Activity 2</td> <td>A2</td> <td> <input type="number" min="0"; class="grd" id="gr2" name="gr2"> / <input type="number" min="1"; class="grd" id="tot2" name="tot2"> </td> <td class="PCell"><p id="pc2"></p></td>
                                 </tr>
                                 <tr>
-                                    <td id="tf3" onclick="chgAct(3)">Activity 3</td>
-                                    <td id="ab3" onclick="chgAbbrev(3)">A3</td> <td> <input type="number" min="0"; class="grd" id="gr3" name="gr3"> / <input type="number" min="1"; class="grd" id="tot3" name="tot3"> </td> <td class="PCell"><p id="pc3"></p></td>
+                                    <td>Activity 3</td> <td>A3</td> <td> <input type="number" min="0"; class="grd" id="gr3" name="gr3"> / <input type="number" min="1"; class="grd" id="tot3" name="tot3"> </td> <td class="PCell"><p id="pc3"></p></td>
                                 </tr>
                                 <tr>
-                                    <td id="tf4" onclick="chgAct(4)">Activity 4</td>
-                                    <td id="ab4" onclick="chgAbbrev(4)">A4</td> <td> <input type="number" min="0"; class="grd" id="gr4" name="gr4"> / <input type="number" min="1"; class="grd" id="tot4" name="tot4"> </td> <td class="PCell"><p id="pc4"></p></td>
+                                    <td>Activity 4</td> <td>A4</td> <td> <input type="number" min="0"; class="grd" id="gr4" name="gr4"> / <input type="number" min="1"; class="grd" id="tot4" name="tot4"> </td> <td class="PCell"><p id="pc4"></p></td>
                                 </tr>
                                 
                             </tbody>
@@ -49,8 +45,6 @@
                             </tfoot>
                         </table>
                         <div id="buttons">
-                            <button type="button" onclick="addtablerow()" id="addRow">ADD ROW</button>
-                            <button type="button" onclick="removetablerow()" id="delRow">DELETE ROW</button>
                             <button type="button" onclick="clearValues()" id="clr">CLEAR</button>
                             <button type="button" onclick="avgofgrades()" id="avg">AVERAGE</button>
                             <button type="button" onclick="meanofgrades()" id="mean">MEAN</button>
