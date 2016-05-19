@@ -22,16 +22,13 @@ h3
     background-color:rgb(233,238,241);
     border: 1px solid rgb(217,229,232);
     padding-left: 10px;
-    
     table-layout: auto;
-    
 }
 table
 {
     display:inline;
     width: 100%;
     margin-left: -10px;
-    
     border-collapse: collapse;
 }
 
@@ -48,8 +45,6 @@ th, td
     width:250px;
 }
 
-
-
 td input
 {
     width:85px;
@@ -64,6 +59,7 @@ tfoot tr td p
 {
     height: 0px;
 }
+
 #buttons
 {
     margin-top: 40px;
@@ -79,6 +75,7 @@ button
     border-style: none;
     border-radius:2px;
 }
+
 .outer
 {
     background-color: white;
@@ -88,11 +85,13 @@ button
     margin-left: 40px;
     width: 90%;
 }
+
 body
 {
     
     background-color:rgb(167,25,47);
 }
+
 #clr
 {
     margin-right: 10px;
