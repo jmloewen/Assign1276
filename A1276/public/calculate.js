@@ -100,11 +100,10 @@ function meanofgrades()
     document.getElementById('moaog').innerHTML = "N/A";
     document.getElementById('moaog').value = "N/A";
     
-    
     if (totDiv > 0)
     {
-        document.getElementById('moaog').innerHTML = sum/totDiv;
-        document.getElementById('moaog').value = sum/totDiv;
+        document.getElementById('moaog').innerHTML = Math.round((sum/totDiv) * 100) / 100 + "%";
+        document.getElementById('moaog').value = Math.round((sum/totDiv) * 100) / 100 + "%";
     }
 }
 
@@ -138,8 +137,8 @@ function avgofgrades()
     
     if (sumTotals > 0)
     {
-        document.getElementById('moaog').innerHTML = sumMarks / sumTotals;
-        document.getElementById('moaog').value = sumMarks / sumTotals;
+        document.getElementById('moaog').innerHTML = Math.round((sumMarks / sumTotals) * 10000) / 100 + "%";
+        document.getElementById('moaog').value = Math.round((sumMarks / sumTotals) * 10000) / 100;
     }
 }
 
@@ -164,8 +163,8 @@ function calcPercentages()
             
             if (curTot != null && curTot != "" && curTot > 0)
             {
-                document.getElementById('pc' + i).value = curGr / curTot;
-                document.getElementById('pc' + i).innerHTML = curGr / curTot;
+                document.getElementById('pc' + i).value = Math.round((curGr / curTot) * 10000) / 100;
+                document.getElementById('pc' + i).innerHTML = Math.round((curGr / curTot) * 10000) / 100 + "%";
             }
         }
     }
